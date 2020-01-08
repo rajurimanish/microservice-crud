@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.repository.query.Param;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -36,7 +37,7 @@ public class MainController {
 	}
 
 	@GetMapping(value = "/getUserDetails/{id}")
-	public User getUserDetails(@Param(value = "id") int id) {
+	public User getUserDetails(@PathVariable int id) {
 		return userRepository.getOne(id);
 	}
 
@@ -52,7 +53,7 @@ public class MainController {
 	}
 
 	@DeleteMapping(value = "/deleteUser/{id}")
-	public String deleteUser(@Param(value = "id") int id) {
+	public String deleteUser(@PathVariable int id) {
 		try {
 			userRepository.deleteById(id);
 			return "User Deleted Successfully";
@@ -77,7 +78,7 @@ public class MainController {
 	}
 
 	@GetMapping(value = "/getUserAccountDetails/{id}")
-	public UserAccount getUserAccountDetails(@Param(value = "id") int id) {
+	public UserAccount getUserAccountDetails(@PathVariable int id) {
 		return userAccountRepository.getOne(id);
 	}
 
@@ -93,7 +94,7 @@ public class MainController {
 	}
 
 	@DeleteMapping(value = "/deleteUserAccount/{id}")
-	public String deleteUserAccount(@Param(value = "id") int id) {
+	public String deleteUserAccount(@PathVariable int id) {
 		try {
 			userAccountRepository.deleteById(id);
 			return "User Deleted Successfully";
