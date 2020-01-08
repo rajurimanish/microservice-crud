@@ -1,0 +1,47 @@
+[
+	{
+		"userid": 1,
+		"firstname": "Manish",
+		"lastname": "Paul",
+		"age": 28,
+		"email": "manish1@gmail.com",
+		"phoneno": "927378273287",
+		"address": "Hyd, Telangana"
+	},
+	{
+		"userid": 2,
+		"firstname": "Ravi",
+		"lastname": "Paul",
+		"age": 29,
+		"email": "ravi1@gmail.com",
+		"phoneno": "92700973287",
+		"address": "Hyd, Telangana"
+	},
+	{
+	    "userid": 3,
+		"firstname": "Ravikant",
+		"lastname": "Kumar",
+		"age":30,
+		"email": "ravikumar1@gmail.com",
+		"phoneno": "9278903287",
+		"address": "Hyd, Telangana"
+	},
+	{
+		"userid": 4,
+		"firstname": "Ramba",
+		"lastname": "Paul",
+		"age":31,
+		"email": "ramba1@gmail.com",
+		"phoneno": "9000973287",
+		"address": "Hyd, Telangana"
+	},
+	{
+		"userid": 5,
+		"firstname": "Mohan",
+		"lastname": "Paul",
+		"age": 27,
+		"email": "mohan1@gmail.com",
+		"phoneno": "9270097309",
+		"address": "Hyd, Telangana"
+	}
+]
